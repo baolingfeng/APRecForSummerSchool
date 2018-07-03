@@ -12,12 +12,20 @@ We have downloaded the <b>Mulan.jar</b> Jar and <b>Weka.jar</b>, upon which Mula
 For more information about Mulan, please refer to its offical documentation: http://mulan.sourceforge.net/documentation.html 
 
 ## Dataset
-We have constructed a dataset based on 936 Android apps, which is in folder [<b>data</b>](https://github.com/baolingfeng/APRecForSummerSchool/tree/master/data).
+We have constructed a dataset based on 936 Android apps, which is in the folder [<b>data</b>](https://github.com/baolingfeng/APRecForSummerSchool/tree/master/data).
 
-There are two files in folder [<b>data</b>](https://github.com/baolingfeng/APRecForSummerSchool/tree/master/data):
+As Mulan requires two text files for the specification of a multi-label dataset: 
+  * an ARFF file specifying the actual data. 
+  * an XML file specifying the names of the labels and optionally any hierarchical relationships among them
+
+We prepared the dataset according to the requirements of Mulan, which can be found in the folder [<b>data</b>](https://github.com/baolingfeng/APRecForSummerSchool/tree/master/data):
   * [app_permission_api.arff](https://github.com/baolingfeng/APRecForSummerSchool/blob/master/data/app_permission_api.arff)
   * [app_permission_api.xml](https://github.com/baolingfeng/APRecForSummerSchool/blob/master/data/app_permission_api.xml)
 
-For more information of these apps, please refer to [our research paper](https://baolingfeng.github.io/papers/scis_paper.pdf)
+In our dataset, there are 2,729 APIs, and 45 permissions in total.   
+
+Each app is represented as a feature vector, which is built on the APIs it uses. The length of the feature vector is equal to the number of the total APIs, i.e., 2,729. And each app has 45 labels, i.e., permissions. 
+
+For more information, please refer to [our research paper](https://baolingfeng.github.io/papers/scis_paper.pdf)
 
 

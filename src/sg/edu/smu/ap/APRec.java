@@ -8,7 +8,7 @@ import mulan.evaluation.Evaluator;
 import mulan.evaluation.MultipleEvaluation;
 import weka.classifiers.trees.J48;
 
-public class APRec {
+public class APRec {	
 	public static void main(String[] args) throws Exception{
 		
 		String arffFilename = "data/app_permission_api.arff";
